@@ -20,10 +20,29 @@
         "react"
     ],
     "rules": {
-        "indent": ["error", 4],
-        "react/jsx-indent": [0],
-        "react/jsx-curly-spacing": [2, "always"],
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "comma-dangle": ["error", "never"]
+        "indent": [
+            "error",
+            2
+        ],
+        "react/jsx-indent": [
+            0
+        ],
+        "react/jsx-curly-spacing": [
+            2,
+            "always"
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ]
     }
 }
