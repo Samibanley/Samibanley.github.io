@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { styled } from '@material-ui/styles';
-import { Button } from '@material-ui/core';
+import { Button, SvgIcon } from '@material-ui/core';
 
 import colorPalette from '../../utils/colorPalette';
 
@@ -20,20 +20,54 @@ const Container = styled('div')({
 });
 
 const Header = styled('h1')({
-  color: colorPalette.SEASHELL,
-  margin: 0
+  color: colorPalette.WHITE,
+  textAlign: 'left',
+  fontFamily: 'Roboto',
+  fontSize: '4vh',
+  margin: 0,
+  padding: '0.5rem',
+  borderRadius: 4,
+  backgroundColor: colorPalette.TRANSPARENT_BLACK,
+  width: '40vh'
+});
+
+const Pink = styled('span')({
+  color: colorPalette.PINK
 });
 
 const AboutMeButton = styled(Button)({
-  backgroundColor: 'aliceblue'
+  fontFamily: 'Roboto',
+  fontWeight: '700',
+  margin: '1rem',
+  color: colorPalette.WHITE,
+  backgroundColor: colorPalette.DARK_PINK,
+  borderColor: colorPalette.WHITE,
+  display: 'flex'
 });
 
 
 const Home = () => (
   <Container>
-    <Header>This is my header.</Header>
+    <Header>
+      Hello! I'm
+      <Pink> Sam Bley</Pink>
+      .
+    </Header>
+    <Header><i>Software Engineer</i></Header>
+    <Header><i>Problem Solver</i></Header>
+    <Header>
+      <i>
+        <Pink>STEM</Pink>
+        inist
+      </i>
+    </Header>
     <Link to="/about">
-      <AboutMeButton>About Me.</AboutMeButton>
+      <AboutMeButton variant="outlined">
+        more
+        <SvgIcon>
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+        </SvgIcon>
+      </AboutMeButton>
     </Link>
   </Container>
 );
