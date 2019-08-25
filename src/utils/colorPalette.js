@@ -1,5 +1,5 @@
 const colorPalette = {
-  SEASHELL: '#fff5ee'
+  WHITE: '#f8f8ff'
 };
 
 export default colorPalette;
