@@ -10,9 +10,9 @@ export const config = {
 export const interests = {
   sectionTitle: 'Interests & Hobbies',
   items: [
-    'Puzzles/Riddles/Brain Teasers',
-    'Curly Girl Method/Hair Product Research',
-    'Building/Customizing Mechanical Keyboards'
+    'Brain Teasers',
+    'Curly Girl Method',
+    'Mechanical Keyboards'
   ]
 };
 
@@ -36,9 +36,11 @@ export const learning = {
   ]
 };
 
+export const currentYear = DateTime.local().year;
+
 export const work = {
   sectionTitle: 'Where I am & Where I\'ve Been',
-  totalYearsExp: `${DateTime.local().year - 2017} years`,
+  totalYearsExp: `${currentYear - 2016} years`,
   headers: ['Been There', 'Now Here'],
   postiions: ['Associate Programmer Analyst', 'Software Engineer'],
   places: ['Express Scripts', 'World Wide Technology - Application Services']

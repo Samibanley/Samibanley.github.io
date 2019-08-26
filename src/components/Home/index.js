@@ -31,7 +31,7 @@ const Header = styled('h1')({
   width: '40vh'
 });
 
-const Pink = styled('span')({
+export const Pink = styled('span')({
   color: colorPalette.PINK
 });
 
@@ -49,7 +49,7 @@ const AboutMeButton = styled(Button)({
 const Home = () => (
   <Container>
     <Header>
-      Hello! I'm
+      {'Hello! I\'m'}
       <Pink> Sam Bley</Pink>
       .
     </Header>
