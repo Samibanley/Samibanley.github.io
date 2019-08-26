@@ -6,7 +6,7 @@ import { Button, SvgIcon } from '@material-ui/core';
 import colorPalette from '../../utils/colorPalette';
 
 const Container = styled('div')({
-  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/heroImage3x.jpg")',
+  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/heroImage2x.jpg")',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
@@ -26,7 +26,7 @@ const Header = styled('h1')({
   fontSize: '4vh',
   margin: 0,
   padding: '0.5rem',
-  borderRadius: 4,
+  borderRadius: 0,
   backgroundColor: colorPalette.TRANSPARENT_BLACK,
   width: '40vh'
 });
@@ -49,7 +49,7 @@ const AboutMeButton = styled(Button)({
 const Home = () => (
   <Container>
     <Header>
-      {'Hello! I\'m'}
+      { 'Hello! I\'m' }
       <Pink> Sam Bley</Pink>
       .
     </Header>
