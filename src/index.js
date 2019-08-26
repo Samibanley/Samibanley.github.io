@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from './components/App';
 import 'typeface-roboto';
-import 'typeface-lora';
 
 ReactDOM.render(
   <BrowserRouter>
