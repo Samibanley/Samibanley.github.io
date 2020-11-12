@@ -19,11 +19,36 @@ body, html {height: 100%}
   background-size: cover;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .icons {
-  margin: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-row {
+  margin: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.heavy {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
 }
 
 .center-text {
@@ -32,22 +57,29 @@ body, html {height: 100%}
 </style>
 <body>
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <img src=assets/ElephantButtLogo.png >
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="center-text w3-jumbo w3-animate-top">SAM BLEY</h1>
+  <div class="container w3-display-middle">
+    <div class="logo w3-animate-top">
+      <img src=assets/ElephantButtLogo.png >
+    </div>
+    <h1 class="center-text w3-jumbo">SAM BLEY</h1>
     <hr class="w3-border-grey" style="margin:auto;width:60%">
   <div class="icons">
-    <a href="https://www.instagram.com/samibanley">
-      <i class="fab fa-instagram fa-2x"></i>
-    </a>
-    <a href="https://www.twitter.com/samibanley">
-      <i class="fab fa-twitter fa-2x"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/samibanley">
-      <i class="fab fa-linkedin-in fa-2x"></i>
-    </a>
+    <div class="icons-row">
+      <a href="https://www.instagram.com/samibanley">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.twitter.com/samibanley">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/samibanley">
+        <i class="fab fa-linkedin-in fa-2x"></i>
+      </a>
+    </div>
+    <div class="icons-row">
+      <a href="https://www.giphy.com/samibanley">
+        <h6 class="heavy">GIPHY</h6>
+      </a>
+    </div>
   </div>
   </div>
 </div>
