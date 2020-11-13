@@ -3,75 +3,30 @@
 <title>Sam, I am.</title>
 <head>
   <script src="https://kit.fontawesome.com/bc7ff42d0c.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleColor() {
+      const body = document.getElementById("body");
+      body.classList.toggle("light");
+    } 
+  </script>
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  min-height: 100%;
-  background-color: black;
-  background-position: center;
-  background-size: cover;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.icons {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.icons-row {
-  margin: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.heavy {
-  font-weight: bold;
-}
-
-.name-title {
-  margin-bottom: 15px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-}
-
-.center-text {
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-}
-</style>
+<link rel="stylesheet" href="assets/main-styles.css">
+<link rel="stylesheet" href="assets/slider.css">
 <body>
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<div id="body" class="bgimg w3-display-container w3-animate-opacity">
   <div class="container w3-display-middle">
-    <div class="logo w3-animate-top">
-      <img src=assets/ElephantButtLogo.png >
+    <div onclick="toggleColor()" class="logo w3-animate-top">
+      <img id="logo" src="assets/ElephantButtLogoWhite.png" >
     </div>
     <div class="name-title">
       <h1 class="center-text w3-jumbo">SAM BLEY</h1>
       <h5 class="center-text">Software Engineer | Pixel Artist</h5>
     </div>
-    <hr class="w3-border-grey" style="margin:auto;width:60%">
+    <hr hr="w3-border-grey" style="margin:auto;width:60%">
   <div class="icons">
     <div class="icons-row">
       <a href="https://www.instagram.com/samibanley">
