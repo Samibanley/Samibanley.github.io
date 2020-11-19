@@ -9,12 +9,12 @@ body {
   min-height: 100%;
   background-position: center;
   background-size: cover;
-  background-color: black;
+  background-color: rgb(153, 114, 197);
   color: white;
 }
 
-.light {
-  background-color: lightsalmon;
+.dark {
+  background-color: black;
   color: white;
 }
 
