@@ -35,6 +35,11 @@ body, html {height: 100%}
 
 .heavy {
   font-weight: bold;
+  margin: 4px;
+}
+
+.support-title {
+  margin-top: 20px;
 }
 
 .name-title {
